@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+:root {
+    --body-color: #adadad;
+    --secondary-color: #555;
+    --background-color: #f4f4f4;
+    --text-color: #000;
+    --text-title:white;
+    --backgound-title: #07060F;
+    --footer-color: #09080D;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--body-color);
+    display: grid;
+}
+
+/* ----------------header--------------*/
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url('/assets/back-4.png');
+
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    border-top: 1px solid transparent;
+}
+.hero-content {
+    text-align: center;
+    color: var(--text-title);
+    margin-top: 150px;
+    
+}
+
+.hero-content h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    background-color: #0000005e;
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 2px solid var(--text-title);
+    margin-bottom: 3em;
+}
+.hero nav ul {
+    text-align: right;
+    margin: 20px 30px 20px 0;
+}
+.hero nav li {
+    display: inline-block;
+    list-style: none;
+    border: 1px solid var(--text-title);
+    margin-left: 10px;
+    border-radius: 3px;
+    
+}
+.hero nav li a {
+    background-color: var(--backgound-title);
+    color: var(--text-title);
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+}
+.hero nav li a:hover {
+    background-color: var(--text-title);
+    color: var(--backgound-title);
+    transition: 0.3s;
+}
+
+/* ----------------main--------------*/
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+.content-section {
+    background-color: var(--background-color);
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+.card {
+    display: inline-block;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: var(--text-title);
+    border-radius: 3px;
+}
+.card img {
+    width: 40%;
+    height: auto;
+    
+}
+
+article h2{
+    background-color: var(--backgound-title);
+    color: var(--text-title);
+    padding: 15px;
+    margin: -15px -15px 15px -15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+.rodape {
+    height: 50px;
+    background-color: var(--footer-color);
+    color: var(--text-title);
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.788);
+    padding: 10px;
+    margin-top: 15px;
+    line-height: 50px;
+}
