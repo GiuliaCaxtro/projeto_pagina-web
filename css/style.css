@@ -4,6 +4,7 @@
     --body-color: #adadad;
     --secondary-color: #555;
     --background-color: #f4f4f4;
+    --backgroun-color2:#241E3F;
     --text-color: #000;
     --text-title:white;
     --backgound-title: #07060F;
@@ -43,8 +44,9 @@ body {
 }
 
 .hero-content p {
-    background-color: #0000005e;
+    background: rgba(0, 0, 0, 0.8);
     display: inline-block;
+    border-radius: 3px; ;
     padding: 10px;
     border-bottom: 2px solid var(--text-title);
     margin-bottom: 3em;
@@ -87,21 +89,29 @@ main {
     padding: 15px;
     margin-top: 15px;
     border-radius: 3px;
+    overflow: auto;
 }
 
 .card {
-    display: inline-block;
-    gap: 15px;
-    margin-bottom: 15px;
-    padding: 10px;
-    background-color: var(--secondary-color);
-    color: var(--text-title);
-    border-radius: 3px;
+    width: 32%;
+    float: left;  
+}
+.card-1, .card-2 {
+    margin-right: 2%;
 }
 .card img {
-    width: 40%;
-    height: auto;
+    width: 100%;
+    display: block;
     
+}
+.card p {
+    text-align: center;
+    background-color: var(--backgroun-color2);
+    color: var(--text-title);
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
 article h2{
@@ -112,8 +122,14 @@ article h2{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 }
+
+.content-article p {
+    padding: 15px;
+    line-height: 1.5;
+    text-indent: 20px;
+}
 .rodape {
-    height: 50px;
+    height: 60px;
     background-color: var(--footer-color);
     color: var(--text-title);
     font-size: 14px;
@@ -121,5 +137,13 @@ article h2{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.788);
     padding: 10px;
     margin-top: 15px;
-    line-height: 50px;
+    line-height: 40px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
 }
